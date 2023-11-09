@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    background-color: rgb(180, 180, 172);
+}
+
+header {
+    background-color: rgb(116, 198, 127);
+    display: flex;
+    justify-content: flex-end;  
+    width: 100%;
+    cursor: pointer;
+}
+
+header:hover{
+    background-color: rgb(122, 188, 122);
+}
+
+.menu {
+    display: flex; 
+    margin: 10px;
+}
+
+.menu ul {
+    list-style: none; 
+    padding: 10px;
+    margin: 10px;
+    display: flex; 
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.informacion {
+    display: flex;
+    width: 80%; 
+    height: 10px;
+}
+.imagen-prin{
+    display: flex;
+    margin-left: 80%;
+    position: relative;
+}
+
+.imagen-principal{
+    width: 60%;
+    height: 50%;
+    border-radius: 10px;
+    cursor: none;
+}
+
+.correo{
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    position: absolute;
+   margin-top: 45%;
+}
+
+.nombre {
+    font-size: 40px;
+    margin-top: 5px;
+    position: relative;
+    cursor: pointer;
+    font-style: oblique;
+}
+
+.cargo{
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+#descargarcv{
+    width: 80px;
+    height: 60px;
+    margin-left: 60%;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px opx
+   
+}
+
+#descargarcv:hover{
+    background-color: gray;
+}
+
+.informacion img{
+    width: 70px;
+    height: 60px;  
+    border-radius: 50px;
+    margin-top: 10px;
+   margin: 40px;
+}
+
+.contenedor-habilidades{
+ display: flex;
+ height: 100px;
+}
+
+.contenedor-habilidades img{
+    height: 80px;
+    width: 90px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#btn-habilidades, #btn-certificados, #btn-proyectos{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color:  rgb(116, 198, 127);
+}
+
+#cont-certificados img{
+   height: 15%;
+   width: 15%;
+   flex-wrap: wrap;
+   cursor: pointer;
+  position: relative;
+  margin-left: 50px;
+}
+
+.contenedor-proyectos{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+   background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
