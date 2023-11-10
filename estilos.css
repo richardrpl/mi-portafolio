@@ -17,6 +17,13 @@ header {
     cursor: pointer;
 }
 
+.saludo{
+    font-size: 35px;
+    display: flex;
+}
+.right-align {
+    text-align: right;
+}
 header:hover{
     background-color: rgb(122, 188, 122);
 }
@@ -86,11 +93,12 @@ header:hover{
 }
 
 #descargarcv{
-    width: 80px;
+    width: 90px;
     height: 60px;
     margin-left: 60%;
     border-radius: 10px;
     font-weight: bold;
+    font-size: 30px;
     border: none;
     cursor: pointer;
     box-shadow: 3px 3px 5px opx
@@ -115,8 +123,8 @@ header:hover{
 }
 
 .contenedor-habilidades img{
-    height: 80px;
-    width: 90px;
+    height: 100px;
+    width: 120px;
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
