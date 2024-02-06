@@ -127,7 +127,7 @@ header:hover{
     width: 120px;
     margin: 5px;
     border-radius: 5px;
-    cursor: pointer;
+    
   }
 
 #btn-habilidades, #btn-certificados, #btn-proyectos{
@@ -137,7 +137,7 @@ header:hover{
     margin: 5px;
     border: none;
     border-radius: 5px;
-   
+    cursor: pointer;
     font-weight: bold;
     background-color:  rgb(116, 198, 127);
 }
