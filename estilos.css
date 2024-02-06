@@ -137,7 +137,7 @@ header:hover{
     margin: 5px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+   
     font-weight: bold;
     background-color:  rgb(116, 198, 127);
 }
@@ -191,7 +191,7 @@ header:hover{
 }
 
 .email,.numero{
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 18px;
 }
 
