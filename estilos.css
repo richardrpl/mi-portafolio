@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 20px;
+    margin: 30px;
     background-color: rgb(180, 180, 172);
 }
 
@@ -119,12 +119,12 @@ header:hover{
 
 .contenedor-habilidades{
  display: flex;
- height: 100px;
+ height: 150px;
 }
 
-.contenedor-habilidades img{
-    height: 100px;
-    width: 120px;
+#contenedor-img-svg img{
+    height: 80px;
+    width: 80px;
     margin: 5px;
     border-radius: 5px;
     
@@ -141,14 +141,17 @@ header:hover{
     font-weight: bold;
     background-color:  rgb(116, 198, 127);
 }
-
-#cont-certificados img{
-   height: 15%;
-   width: 15%;
-   flex-wrap: wrap;
-   cursor: pointer;
-  position: relative;
-  margin-left: 50px;
+.contenedor-certificado {
+    display: flex;
+    height: 150px;
+}
+.contenedor-certificado img{
+    height: 130px;
+    width: 150px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px;
 }
 
 .contenedor-proyectos{
@@ -194,10 +197,24 @@ header:hover{
     margin-left: 10px;
     font-size: 18px;
 }
+@media screen and (max-width: 1220px){
+   header,
+   .informacion,
+   .cargo,
+   .contenedor-footer,
+   .contenedor-habilidades,
+   .contenedor-proyectos {
+    max-width: 1000px;
+    padding: 0 10px;
+   } 
+}
 
-@media screen and (max-width: 768px) {
-    
-  }
+@media screen and (max-width:1020){
+   
+}
+
+
+
   
 
 

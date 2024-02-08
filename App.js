@@ -6,7 +6,7 @@ document.getElementById("correo").addEventListener("click", function(){
 
 
 document.getElementById("btn-habilidades").addEventListener("click", function() {
-var boton = document.getElementById("imagenes");
+var boton = document.getElementById("contenedor-img-svg");
 
 if(boton.style.display==="none"){
     boton.style.display = "block"
@@ -16,7 +16,7 @@ if(boton.style.display==="none"){
 });
 
 document.getElementById("btn-certificados").addEventListener("click", function() {
-var btn = document.getElementById("cont-certificados");
+var btn = document.getElementById("contenedor-certificado-img");
 if(btn.style.display === "none") {
     btn.style.display = "block"
 } else {
