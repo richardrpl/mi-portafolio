@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 body {
-    margin: 30px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: rgb(180, 180, 172);
 }
 
@@ -17,14 +22,13 @@ header {
     cursor: pointer;
 }
 
-.saludo{
+.saludo {
+    margin-top: 15px;
     font-size: 35px;
     display: flex;
 }
-.right-align {
-    text-align: right;
-}
-header:hover{
+
+header:hover {
     background-color: rgb(122, 188, 122);
 }
 
@@ -52,8 +56,24 @@ header:hover{
     display: flex;
     width: auto; 
     height: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
 }
-.imagen-prin{
+.nombre {
+    font-size: 40px;
+    margin-top: 5px;
+    position: relative;
+    font-style: oblique;
+}
+.cargo {
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    margin-top: 45px;
+}
+
+.imagen-prin {
     display: flex;
     margin-left: 80%;
     position: relative;
@@ -61,40 +81,19 @@ header:hover{
     
 }
 
-.imagen-principal{
+.imagen-principal {
     width: 60%;
     height: 50%;
     border-radius: 10px;
     cursor: none;
+    
 }
-
-.correo{
-    font-size: 15px;
-    cursor: pointer;
-    text-decoration: none;
-    display: flex;
+.presentacion {
     position: absolute;
-   margin-top: 45%;
+    margin-top: 130px;
 }
 
-.nombre {
-    font-size: 40px;
-    margin-top: 5px;
-    position: relative;
-    cursor: pointer;
-    font-style: oblique;
-}
-
-.cargo{
-    font-style: italic;
-    font-size: 20px;
-    margin-bottom: 20px;
-    position: absolute;
-    margin-top: 45px;
-    cursor: pointer;
-}
-
-#descargarcv{
+#descargarcv {
     width: 90px;
     height: 60px;
     margin-left: 60%;
@@ -107,11 +106,11 @@ header:hover{
    
 }
 
-#descargarcv:hover{
+#descargarcv:hover {
     background-color: gray;
 }
 
-.informacion img{
+.informacion img {
     width: 70px;
     height: 60px;  
     border-radius: 50px;
@@ -119,20 +118,22 @@ header:hover{
    margin: 40px;
 }
 
-.contenedor-habilidades{
+.contenedor-habilidades {
+ margin-top: 10px;
+ margin-left: 20px;
  display: flex;
- height: auto;
- width: 60%;
+ height: 100px;
+ width: 1000px;
 }
 
-#contenedor-img-svg img{
+#contenedor-img-svg img {
     height: 80px;
     width: 80px;
     margin: 5px;
     border-radius: 5px;
   }
 
-#btn-habilidades, #btn-certificados, #btn-proyectos{
+#btn-habilidades, #btn-certificados, #btn-proyectos {
     width: 100px;
     height: 40px;
     font-size: 15px;
@@ -145,54 +146,63 @@ header:hover{
 }
 .contenedor-certificado {
     margin-top: 30px;
+    margin-left: 20px;
     display: flex;
-    height: auto;
-    width: 70%;
-}
-.contenedor-certificado img{
     height: 130px;
+    width: 1000px;
+}
+.contenedor-certificado img {
+    margin-top: 30px;
+    height: 100px;
     width: 150px;
     cursor: pointer;
     position: relative;
     margin-left: 20px;
 }
 
-
-
-.contenedor-proyectos{
-    margin-top: 30px;
+.contenedor-proyectos {
+   margin-top: 30px;
+   margin-left: 20px;
     display: flex;
     align-items: center;
-    height: 130%;
-    width: 60%;
+    height: 150px;
+    width: 100%;
 }
 
-.imagen-proy{
+.img-proy {
     margin: 10px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+ 
+.contenedor-principal {
+    flex: 1; 
 }
 
 .contenedor-footer {
-   display: flex;
-   background-color: black;
-   color: white;
-   height: 80px;
-   padding: 30px;
-   margin-bottom: auto; 
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 80px;
+  padding: 30px;
+  width: 100%;
+  bottom: 0;
 }
 
-.email,.numero{
+.email,.numero {
     margin-left: 10px;
     font-size: 18px;
 }
+.logo-whatsapp {
+    height: 30px;
+}
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1300px) {
   .header,
-  .contenedor-footer{
+  .contenedor-footer {
     width: auto;
   }
- 
 }
 
 @media only screen and (max-width: 1100) {
@@ -203,6 +213,7 @@ header:hover{
         flex-wrap: wrap;
     }
 }
+
 @media screen and (max-width:800px) {
     .informacion{
       height: 50px;
@@ -211,11 +222,11 @@ header:hover{
 }
 
 @media screen and (max-width:550px) {
-    .contenedor-footer{
+    .contenedor-footer {
         width: 80%;
     }
     .email,
-    .numero{
+    .numero {
         font-size: 12px;
     }
 }
