@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-   
 }
 
 body {
@@ -24,11 +22,10 @@ header:hover {
 
 section {
     display: flex; 
-     flex-wrap: wrap; 
-    /* flex-direction: column; */
+    flex-wrap: wrap; 
     width: 80%;
     height: 100vh;
-    margin-top: 0px;
+    /* margin-top: 0px; */
     float: left;
     border: 2px solid;
 }
@@ -80,7 +77,7 @@ aside {
 .informacion {
     display: flex;
     width: auto; 
-    height: 10px;
+    height: 40px;
     margin-left: 30px;
     margin-top: 20px;
 }
@@ -97,9 +94,6 @@ aside {
     position: absolute;
     margin-top: 45px;
 }
-
-
-
 
 #descargarcv {
     width: 90px;
@@ -122,7 +116,7 @@ aside {
 #btn-habilidades, #btn-certificados, #btn-proyectos {
     width: 100px;
     height: 40px;
-    font-size: 15px;
+    font-size: 13px;
     margin: 5px;
     border: none;
     border-radius: 5px;
@@ -137,6 +131,7 @@ aside {
 .contenedor-habilidades {
     display: flex;
     margin: 20px;
+    margin-top: 10px;
     height: auto;
     width: 90%;
 }
@@ -153,7 +148,7 @@ aside {
 .contenedor-certificado {
     display: flex;
     margin: 20px;
-    height: auto;
+    height: 80px;
     width: 90%;
     
 }
@@ -190,6 +185,7 @@ footer {
   width: 100%;
   bottom: 0;
   margin-top: 3px;
+  /* position: fixed; */
 }
 
 .email,.numero {
@@ -212,7 +208,7 @@ footer {
 
 
     section {
-        width: 70%;
+        width: 75%;
         height: 100vh;
         margin-top: 0px;
         float: left;
@@ -266,8 +262,8 @@ aside {
 } 
 } 
 
-/*responsive de 802px*/
-@media (max-width: 802px ) {
+/*responsive de 960px*/
+@media (max-width: 960px ) {
 
     header {
         background-color: rgb(116, 198, 127);
@@ -285,17 +281,19 @@ aside {
         margin-top: 20px;
     }
     .nombre {
-        font-size: 25px;
-        margin-top: 5px;
+        font-size: 30px;
+        margin-top: 10px;
         position: relative;
         font-style: oblique;
+        margin-left: 10px;
     }
     .cargo {
         font-style: italic;
-        font-size: 13px;
+        font-size: 18px;
         margin-bottom: 20px;
         position: absolute;
         margin-top: 45px;
+        margin-left: 15px;
     }
 
     
@@ -309,9 +307,7 @@ aside {
     display: flex; 
     margin: 10px;
     height: 50px;
-    
 }
-
 
     section {
         width: 60%;
@@ -323,6 +319,7 @@ aside {
 
     .contenedor-habilidades {
         display: flex;
+        flex-wrap: wrap;
         margin: 5px;
         height: auto;
         width: 80%;
@@ -334,12 +331,13 @@ aside {
         margin-left: 10px;
         
       }
+
     .contenedor-certificado {
         display: flex;
+        flex-wrap: wrap;
         margin: 5px;
         height: auto;
-        width: 80%;
-        
+        width: 90%;
     }
     #contenedor-certificado-img img {
          margin: 3px;
@@ -351,6 +349,7 @@ aside {
 
     .contenedor-proyectos {
         display: flex;
+        flex-wrap: wrap;
         margin: 5px;
         height: auto;
         width: 90%;
@@ -381,7 +380,170 @@ footer {
     width: 60px;
     height: 60px;
 }
+
+#btn-habilidades, #btn-certificados, #btn-proyectos {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+    margin: 5px;
+    
+}
+
+#descargarcv {
+    font-size: 20px;
+}
+.informacion {
+    display: flex;
+    width: auto; 
+    height: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
 } 
+
+}
+
+/*responsive de 700px*/
+@media (max-width: 700px ) {
+
+    /* header {
+        background-color: rgb(116, 198, 127);
+        display: flex;
+        justify-content: flex-end;  
+        width: 100%;
+        cursor: pointer;
+    } */
+    
+    .informacion {
+        display: flex;
+        width: auto; 
+        height: 10px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .nombre {
+        font-size: 20px;
+        margin-top: 10px;
+        position: relative;
+        font-style: oblique;
+        margin-left: 5px;
+    }
+    .cargo {
+        font-style: italic;
+        font-size: 10px;
+        margin-bottom: 20px;
+        position: absolute;
+        margin-top: 35px;
+        margin-left: 5px;
+    }
+
+    
+.saludo {
+    margin-top: 15px;
+    font-size: 25px;
+    display: flex;
+}
+
+.menu {
+    display: flex; 
+    margin: 10px;
+    height: 45px;
+}
+
+    section {
+        width: 60%;
+        height: 100vh;
+        margin-top: 0px;
+        float: left;
+        border: 2px solid;
+    }
+
+    .contenedor-habilidades {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px;
+        height: auto;
+        width: 80%;
+    } 
+    #contenedor-img-svg img {
+        margin: 3px;
+        height: 50px;
+        width: 50px;
+        margin-left: 10px;
+        
+      }
+
+    .contenedor-certificado {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px;
+        height: auto;
+        width: 90%;
+    }
+    #contenedor-certificado-img img {
+         margin: 3px;
+         height: 70px;
+         width: 90px;
+         cursor: pointer;
+         margin-left: 10px;
+     }
+
+    .contenedor-proyectos {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px;
+        height: auto;
+        width: 90%;
+        
+    }
+    #contenedor-proyectos-img img {
+       margin: 3px;
+       width: 100px;
+       height: 70px;
+       cursor: pointer;
+   }
+
+
+aside {
+    width: 130px;
+} 
+
+footer {
+    height: 50px;
+}
+.email,.numero {
+    margin-left: 10px;
+    font-size: 15px;
+}
+.logo-whatsapp {
+    height: 20px;
+}
+#descargarcv {
+    width: 50px;
+    height: 50px;
+}
+#descargarcv {
+    font-size: 15px;
+}
+
+#btn-habilidades, #btn-certificados, #btn-proyectos {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+    margin: 5px;
+    
+}
+
+
+.informacion {
+    display: flex;
+    width: auto; 
+    height: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+} 
+
+}
+
 
 
 
