@@ -5,6 +5,8 @@
 }
 
 body {
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgb(180, 180, 172);
     height: 100vh;
 }
@@ -21,31 +23,39 @@ header:hover {
 }
 
 section {
+   
     display: flex; 
     flex-wrap: wrap; 
     width: 80%;
     height: 100vh;
-    /* margin-top: 0px; */
     float: left;
     border: 2px solid;
 }
 
 aside {
-    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: 50%;
+    margin: 20px;
+    /* width: 260px;
     float: left; 
     margin: 20px;
     border: 2px solid;
-    height: auto;
+    height: auto; */
 }
 
 .imagen-principal {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    /* width: 100%; */
     border-radius: 50px;
     cursor: none; 
 }
 .contenedor-presentacion {
     width: 100%;
 }
+
 
 .saludo {
     margin-top: 15px;
@@ -131,9 +141,9 @@ aside {
 .contenedor-habilidades {
     display: flex;
     margin: 20px;
-    margin-top: 10px;
-    height: auto;
-    width: 90%;
+    height: 90px;
+    width: 75%;
+    border: 2px solid;
 }
 
 #contenedor-img-svg img {
@@ -148,32 +158,38 @@ aside {
 .contenedor-certificado {
     display: flex;
     margin: 20px;
-    height: 80px;
-    width: 90%;
+    height: 120px;
+    width: 75%;
+    border: 2px solid;
     
 }
 #contenedor-certificado-img img{
    flex-wrap: wrap;
     margin-top: 5px;
-    height: 100px;
+    height: auto;
     width: 135px;
     cursor: pointer;
     margin-left: 10px;
+    border: 5px solid;
 }
 
 .contenedor-proyectos {
+    margin-top: 30px;
     display: flex;
     margin: 20px;
-    height: auto;
-    width: 90%;
+    height: 170px;
+    width: 75%;
+    border: 2px solid;
 }
 
 #contenedor-proyectos-img img {
-     flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 10px;
     width: 150px;
     height: 150px;
     cursor: pointer;
+    max-width: 100%;
+    border: 5px solid;
 }
 
 footer {
@@ -186,6 +202,7 @@ footer {
   bottom: 0;
   margin-top: 3px;
   /* position: fixed; */
+  
 }
 
 .email,.numero {
@@ -197,82 +214,82 @@ footer {
 }
 
 @media (max-width: 1246px ) {
-
-    header {
-        background-color: rgb(116, 198, 127);
-        display: flex;
-        justify-content: flex-end;  
-        width: 100%;
-        cursor: pointer;
-    }
-
-
     section {
         width: 75%;
-        height: 100vh;
+        height: auto;
         margin-top: 0px;
         float: left;
-        border: 2px solid;
     }
+    
+header {
+    background-color: rgb(116, 198, 127);
+    display: flex;
+    justify-content: flex-end;  
+    width: 100%;
+    cursor: pointer;
+    height: 80px;
+}
+header:hover {
+    background-color: rgb(122, 188, 122);
+}
 
     .contenedor-habilidades {
         display: flex;
+        flex-wrap: wrap;
         margin: 5px;
-        height: auto;
-        width: 90%;
+       height: auto;
+        width: auto;
     } 
     #contenedor-img-svg img {
         margin: 3px;
-        height: 50px;
-        width: 60px;
+        height: 60px;
+        width: auto;
         margin-left: 10px;
-        
       }
+
     .contenedor-certificado {
         display: flex;
+        flex-wrap: wrap;
         margin: 5px;
         height: auto;
-        width: 90%;
-        
+        width: auto;
     }
     #contenedor-certificado-img img {
          margin: 3px;
-         height: 70px;
-         width: 100px;
+         max-width: 100%;
+         height: auto;
          cursor: pointer;
          margin-left: 10px;
+         border: 5px solid;
      }
 
     .contenedor-proyectos {
         display: flex;
+        flex-wrap: wrap;
         margin: 5px;
         height: auto;
-        width: 90%;
+        width: auto;
     }
     #contenedor-proyectos-img img {
        margin: 3px;
-       width: 100px;
-       height: 70px;
+       max-width: auto;
+       height: auto;
        cursor: pointer;
+       border: 5px solid;
    }
 
-
-aside {
-    width: 200px;
-} 
-} 
-
-/*responsive de 960px*/
-@media (max-width: 960px ) {
-
-    header {
-        background-color: rgb(116, 198, 127);
+    aside {
         display: flex;
-        justify-content: flex-end;  
-        width: 100%;
-        cursor: pointer;
-    }
-    
+        flex-wrap: wrap;
+        max-width: 100%;
+        
+        margin: 10px;
+   } 
+} 
+
+/* 
+@media (max-width: 960px ) {
+ 
     .informacion {
         display: flex;
         width: auto; 
@@ -314,7 +331,6 @@ aside {
         height: 100vh;
         margin-top: 0px;
         float: left;
-        border: 2px solid;
     }
 
     .contenedor-habilidades {
@@ -359,11 +375,11 @@ aside {
        width: 100px;
        height: 70px;
        cursor: pointer;
-   }
+   } */
 
 
 aside {
-    width: 180px;
+    width: 240px;
 } 
 
 footer {
@@ -402,17 +418,9 @@ footer {
 
 }
 
-/*responsive de 700px*/
+
 @media (max-width: 700px ) {
 
-    /* header {
-        background-color: rgb(116, 198, 127);
-        display: flex;
-        justify-content: flex-end;  
-        width: 100%;
-        cursor: pointer;
-    } */
-    
     .informacion {
         display: flex;
         width: auto; 
@@ -454,7 +462,6 @@ footer {
         height: 100vh;
         margin-top: 0px;
         float: left;
-        border: 2px solid;
     }
 
     .contenedor-habilidades {
@@ -504,7 +511,7 @@ footer {
 
 
 aside {
-    width: 130px;
+    width: 180px;
 } 
 
 footer {
@@ -532,8 +539,6 @@ footer {
     margin: 5px;
     
 }
-
-
 .informacion {
     display: flex;
     width: auto; 
@@ -543,7 +548,7 @@ footer {
 } 
 
 }
-
+ */
 
 
 
