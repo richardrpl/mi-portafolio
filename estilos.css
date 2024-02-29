@@ -5,7 +5,7 @@
 }
 
 body {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
     background-color: rgb(180, 180, 172);
     height: 100vh;
@@ -23,43 +23,32 @@ header:hover {
 }
 
 section {
-   
-    display: flex; 
+    display: flex;   
     flex-wrap: wrap; 
+    flex-direction: column;
     width: 80%;
-    height: 100vh;
     float: left;
     border: 2px solid;
 }
 
 aside {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    height: 50%;
-    margin: 20px;
-    /* width: 260px;
+    width: 230px;
     float: left; 
     margin: 20px;
     border: 2px solid;
-    height: auto; */
+    height: auto; 
 }
 
 .imagen-principal {
     max-width: 100%;
     height: auto;
-    /* width: 100%; */
     border-radius: 50px;
     cursor: none; 
 }
-.contenedor-presentacion {
-    width: 100%;
-}
-
 
 .saludo {
     margin-top: 15px;
-    font-size: 35px;
+    font-size: 30px;
     display: flex;
 }
 
@@ -106,12 +95,12 @@ aside {
 }
 
 #descargarcv {
-    width: 90px;
-    height: 60px;
+    width: 70px;
+    height: 40px;
     margin-left: 80%;
     border-radius: 10px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     box-shadow: 3px 3px 5px opx
@@ -124,7 +113,7 @@ aside {
 
 
 #btn-habilidades, #btn-certificados, #btn-proyectos {
-    width: 100px;
+    width: 90px;
     height: 40px;
     font-size: 13px;
     margin: 5px;
@@ -142,7 +131,7 @@ aside {
     display: flex;
     margin: 20px;
     height: 90px;
-    width: 75%;
+    width: 90%;
     border: 2px solid;
 }
 
@@ -152,14 +141,13 @@ aside {
     height: 60px;
     width: 90px;
     margin-left: 10px;
-    
   }
 
 .contenedor-certificado {
     display: flex;
     margin: 20px;
     height: 120px;
-    width: 75%;
+    width: 90%;
     border: 2px solid;
     
 }
@@ -171,6 +159,7 @@ aside {
     cursor: pointer;
     margin-left: 10px;
     border: 5px solid;
+    
 }
 
 .contenedor-proyectos {
@@ -178,17 +167,16 @@ aside {
     display: flex;
     margin: 20px;
     height: 170px;
-    width: 75%;
+    width: 90%;
     border: 2px solid;
 }
 
-#contenedor-proyectos-img img {
+#contenedor-proyectos-img .img-proy {
     flex-wrap: wrap;
     margin: 10px;
-    width: 150px;
     height: 150px;
     cursor: pointer;
-    max-width: 100%;
+    max-width: 80%;
     border: 5px solid;
 }
 
@@ -201,8 +189,6 @@ footer {
   width: 100%;
   bottom: 0;
   margin-top: 3px;
-  /* position: fixed; */
-  
 }
 
 .email,.numero {
@@ -216,303 +202,91 @@ footer {
 @media (max-width: 1246px ) {
     section {
         width: 75%;
-        height: auto;
-        margin-top: 0px;
         float: left;
     }
-    
-header {
-    background-color: rgb(116, 198, 127);
-    display: flex;
-    justify-content: flex-end;  
-    width: 100%;
-    cursor: pointer;
-    height: 80px;
-}
-header:hover {
-    background-color: rgb(122, 188, 122);
-}
 
-    .contenedor-habilidades {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5px;
-       height: auto;
-        width: auto;
+    aside {
+        width: 200px;
     } 
-    #contenedor-img-svg img {
-        margin: 3px;
-        height: 60px;
-        width: auto;
-        margin-left: 10px;
-      }
 
-    .contenedor-certificado {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5px;
-        height: auto;
-        width: auto;
-    }
+.contenedor-habilidades, .contenedor-certificado, .contenedor-proyectos {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+#contenedor-img-svg img {
+    flex-wrap: wrap;
+    margin: 15px;
+    height: 50px;
+    width: 70px;
+  }
+
     #contenedor-certificado-img img {
          margin: 3px;
          max-width: 100%;
          height: auto;
          cursor: pointer;
-         margin-left: 10px;
-         border: 5px solid;
      }
 
-    .contenedor-proyectos {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5px;
-        height: auto;
-        width: auto;
-    }
     #contenedor-proyectos-img img {
-       margin: 3px;
-       max-width: auto;
+       max-width: 100%;
        height: auto;
        cursor: pointer;
-       border: 5px solid;
+   }
+   .nombre {
+    margin-left: 20px;
+   }
+   .cargo {
+    margin-left: 25px;
    }
 
+    
+} 
+
+@media (max-width: 970px ) {
+    section {
+        width: 60%;
+        float: left;
+    }
+    
     aside {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 100%;
-        
-        margin: 10px;
-   } 
-} 
-
-/* 
-@media (max-width: 960px ) {
- 
-    .informacion {
-        display: flex;
-        width: auto; 
-        height: 10px;
-        margin-left: 30px;
-        margin-top: 20px;
-    }
-    .nombre {
-        font-size: 30px;
-        margin-top: 10px;
-        position: relative;
-        font-style: oblique;
-        margin-left: 10px;
-    }
-    .cargo {
-        font-style: italic;
-        font-size: 18px;
-        margin-bottom: 20px;
-        position: absolute;
-        margin-top: 45px;
-        margin-left: 15px;
+        width: 180px; 
     }
 
-    
-.saludo {
-    margin-top: 15px;
-    font-size: 25px;
-    display: flex;
-}
 
-.menu {
-    display: flex; 
+#contenedor-img-svg img {
+    flex-wrap: wrap;
     margin: 10px;
-    height: 50px;
-}
-
-    section {
-        width: 60%;
-        height: 100vh;
-        margin-top: 0px;
-        float: left;
-    }
-
-    .contenedor-habilidades {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5px;
-        height: auto;
-        width: 80%;
-    } 
-    #contenedor-img-svg img {
-        margin: 3px;
-        height: 50px;
-        width: 50px;
-        margin-left: 10px;
-        
-      }
-
-    .contenedor-certificado {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5px;
-        height: auto;
-        width: 90%;
-    }
-    #contenedor-certificado-img img {
-         margin: 3px;
-         height: 70px;
-         width: 90px;
-         cursor: pointer;
-         margin-left: 10px;
-     }
-
-    .contenedor-proyectos {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5px;
-        height: auto;
-        width: 90%;
-    }
-    #contenedor-proyectos-img img {
-       margin: 3px;
-       width: 100px;
-       height: 70px;
-       cursor: pointer;
-   } */
-
-
-aside {
-    width: 240px;
-} 
-
-footer {
-    height: 50px;
-}
-.email,.numero {
-    margin-left: 10px;
-    font-size: 15px;
-}
-.logo-whatsapp {
-    height: 20px;
-}
-#descargarcv {
+    height: 40px;
     width: 60px;
-    height: 60px;
-}
+  }
 
-#btn-habilidades, #btn-certificados, #btn-proyectos {
-    width: 80px;
-    height: 30px;
-    font-size: 10px;
-    margin: 5px;
-    
-}
-
-#descargarcv {
-    font-size: 20px;
-}
-.informacion {
-    display: flex;
-    width: auto; 
-    height: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-} 
-
-}
-
-
-@media (max-width: 700px ) {
-
-    .informacion {
-        display: flex;
-        width: auto; 
-        height: 10px;
-        margin-left: 30px;
-        margin-top: 20px;
-    }
-    .nombre {
-        font-size: 20px;
-        margin-top: 10px;
-        position: relative;
-        font-style: oblique;
-        margin-left: 5px;
-    }
-    .cargo {
-        font-style: italic;
-        font-size: 10px;
-        margin-bottom: 20px;
-        position: absolute;
-        margin-top: 35px;
-        margin-left: 5px;
-    }
-
-    
-.saludo {
-    margin-top: 15px;
-    font-size: 25px;
-    display: flex;
-}
-
-.menu {
-    display: flex; 
-    margin: 10px;
-    height: 45px;
-}
-
-    section {
-        width: 60%;
-        height: 100vh;
-        margin-top: 0px;
-        float: left;
-    }
-
-    .contenedor-habilidades {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5px;
-        height: auto;
-        width: 80%;
-    } 
-    #contenedor-img-svg img {
-        margin: 3px;
-        height: 50px;
-        width: 50px;
-        margin-left: 10px;
-        
-      }
-
-    .contenedor-certificado {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5px;
-        height: auto;
-        width: 90%;
-    }
     #contenedor-certificado-img img {
          margin: 3px;
-         height: 70px;
-         width: 90px;
+         max-width: 100%;
+         height: auto;
          cursor: pointer;
-         margin-left: 10px;
      }
 
-    .contenedor-proyectos {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5px;
-        height: auto;
-        width: 90%;
-        
-    }
     #contenedor-proyectos-img img {
-       margin: 3px;
-       width: 100px;
-       height: 70px;
+       max-width: 100%;
+       height: auto;
        cursor: pointer;
    }
 
-
-aside {
-    width: 180px;
-} 
+   .nombre {
+    font-size: 30px;
+    margin-top: 0px;
+    position: relative;
+    font-style: oblique;
+}
+.cargo {
+    font-style: italic;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 35px;
+}
 
 footer {
     height: 50px;
@@ -524,34 +298,65 @@ footer {
 .logo-whatsapp {
     height: 20px;
 }
-#descargarcv {
-    width: 50px;
+}
+
+
+@media (max-width: 715px ) {
+    section {
+        width: 50%;
+        float: left;
+    }
+    
+aside {
+    width: 160px;
+}  
+    
+
+#contenedor-img-svg img {
+    flex-wrap: wrap;
+    margin: 10px;
+    height: 40px;
+    width: 60px;
+  }
+
+    #contenedor-certificado-img img {
+         margin: 3px;
+         max-width: 100%;
+         height: auto;
+         cursor: pointer;
+     }
+
+   
+    #contenedor-proyectos-img img {
+       max-width: 100%;
+       height: auto;
+       cursor: pointer;
+   }
+
+   .nombre {
+    font-size: 20px;
+    margin-top: 0px;
+    position: relative;
+    font-style: oblique;
+}
+.cargo {
+    font-size: 12px;
+    margin-top: 35px;
+}
+
+
+footer {
     height: 50px;
 }
-#descargarcv {
+.email,.numero {
+    margin-left: 10px;
     font-size: 15px;
 }
-
-#btn-habilidades, #btn-certificados, #btn-proyectos {
-    width: 80px;
-    height: 30px;
-    font-size: 10px;
-    margin: 5px;
-    
+.logo-whatsapp {
+    height: 20px;
 }
-.informacion {
-    display: flex;
-    width: auto; 
-    height: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-} 
 
 }
- */
-
-
-
 
 
 
