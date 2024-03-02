@@ -33,6 +33,6 @@ document.getElementById("btn-proyectos").addEventListener("click", function() {
     }
 })
 
-document.getElementById("descargarcv").addEventListener("click", function() {
+document.getElementById("CV").addEventListener("click", function() {
     window.location.href = "https://drive.google.com/file/d/1_CbF21txri1xRthZv5eyD7aRPKeVy883/view?usp=sharing";
 });
