@@ -23,7 +23,7 @@ button {
     box-shadow: 0 0 0 #ffffff;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
- width: 100px;
+    width: 100px;
     
     margin-left: 80%;
   }
@@ -182,14 +182,12 @@ section {
     flex-direction: column;
     width: 80%;
     float: left;
-    border: 2px solid;
 }
 
 aside {
     width: 230px;
     float: left; 
     margin: 20px;
-    border: 2px solid;
     height: auto; 
 }
 
@@ -268,7 +266,6 @@ aside {
     margin: 20px;
     height: 90px;
     width: 90%;
-    border: 2px solid;
 }
 
 #contenedor-img-svg img {
@@ -284,8 +281,6 @@ aside {
     margin: 20px;
     height: 120px;
     width: 90%;
-    border: 2px solid;
-    
 }
 #contenedor-certificado-img img{
    flex-wrap: wrap;
@@ -302,7 +297,6 @@ aside {
     display: grid;
     display: flex;
     margin: 20px;
-    border: 2px solid;
 }
 
 #contenedor-proyectos-img .img-proy {
