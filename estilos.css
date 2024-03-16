@@ -306,6 +306,9 @@ aside {
     cursor: pointer;
     border: 5px solid;
 }
+#contenedor-proyectos-img > img{
+    object-fit: contain;
+}
 
 a {
     text-decoration: none;
@@ -489,18 +492,22 @@ button{
          cursor: pointer;
      }
 
-   
-    #contenedor-proyectos-img img {
-       max-width: 100%;
-       height: auto;
-       cursor: pointer;
-   }
+   #contenedor-proyectos-img img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+#contenedor-proyectos-img .img-proy {
+ margin: 5px;
+ height: auto;
+ cursor: pointer;
+ border: 3px solid;
+}
 
    .contenedor-habilidades, .contenedor-certificado, .contenedor-proyectos {
     flex-wrap: wrap;
    }
   
-
    .nombre {
     font-size: 15px;
     margin-top: 0px;
@@ -528,6 +535,59 @@ footer {
 }
 .logo-whatsapp {
     height: 20px;
+}
+
+}
+
+
+
+@media (max-width: 416px ) {
+    section {
+        width: 50%;
+        float: left;
+    }
+    
+aside {
+    width: 130px;
+}  
+
+button{
+    margin-left: 10px;
+    width: 90px;
+    height:auto;
+    font-size: 12px;
+}   
+    #contenedor-proyectos-img img {
+       width: 150px;
+       cursor: pointer;
+   }
+   #contenedor-proyectos-img .img-proy {
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+    border: 3px solid;
+}
+   .nombre {
+    font-size: 12px;
+    margin-top: 0px;
+    position: relative;
+    font-style: oblique;
+}
+.cargo {
+    font-size: 11px;
+    margin-top: 35px;
+}
+
+footer {
+    flex-wrap: wrap;
+    height: auto;
+}
+.email,.numero {
+    margin-left: 7px;
+    font-size: 12px;
+}
+.logo-whatsapp {
+    height: 14px;
 }
 
 }
