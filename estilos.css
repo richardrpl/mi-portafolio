@@ -275,11 +275,8 @@ aside {
     height: 60px;
     width: 90px;
     margin-left: 10px;
-    display: none;
-    
   }
   
-
 .contenedor-certificado {
     display: flex;
     margin: 20px;
