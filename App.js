@@ -4,15 +4,16 @@ document.getElementById("correo").addEventListener("click", function(){
     window.location.href = 'mailto:' + correoElectronico;
 });
 
+var boton = document.getElementById("btn-habilidades");
+var div = document.getElementById("contenedor-img-svg");
 
-document.getElementById("btn-habilidades").addEventListener("click", function() {
-var boton = document.getElementById("contenedor-img-svg");
+boton.addEventListener('click', function(){
+    if (div.style.display === "none"){
+        div.style.display = "block";
+    } else {
+        div.style.display = "none";
+    }
 
-if(boton.style.display==="none"){
-    boton.style.display = "block"
-} else {
-    boton.style.display = "none"
-}
 });
 
 document.getElementById("btn-certificados").addEventListener("click", function() {

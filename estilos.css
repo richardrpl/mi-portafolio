@@ -266,6 +266,7 @@ aside {
     margin: 20px;
     height: 90px;
     width: 90%;
+    
 }
 
 #contenedor-img-svg img {
@@ -274,6 +275,8 @@ aside {
     height: 60px;
     width: 90px;
     margin-left: 10px;
+    display: none;
+    
   }
   
 
